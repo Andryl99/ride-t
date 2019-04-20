@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('../font/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: bold;
+    src: url('../font/Roboto-Bold.ttf');
+}
+@font-face{
+    font-family: "Roboto-condensed";
+    src: url('../font/Roboto-Condensed.ttf');
+}
+@font-face{
+    font-family: "Roboto-condensed";
+    src: url('../font/Roboto-BoldCondensed.ttf');
+}
+p
+{
+    font-family: "Roboto";
+    font-weight: lighter;
+}
+h1,h2,h3,h4,h5
+{
+    font-family: "Roboto-condensed";
+    font-weight: bold;
+}
+h3
+{
+    text-transform: uppercase;
+}
+body
+{
+    margin:0;
+}
+header
+{
+    margin:auto;
+}
+#map
+{
+    margin:auto;
+    height: 400px;
+    width: 80%;
+}
+#menuContainer
+{
+    height: 120px;
+    width: 100%;
+    background-color: rgba(217,217,217,0.8);
+    border-bottom: 1px rgba(25,25,25,0.4) solid;
+}
+#menu
+{
+    padding-top:20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#menu li
+{
+    list-style-type: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#menu a
+{
+    color:rgba(25,25,25,0.6);
+    font-family: "Roboto";
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.2s;
+}
+#menu a:hover
+{
+    color:rgba(25,25,25,0.2);
+}
+
+#menu a:checked
+{
+    color:rgb(255,127,0);
+}
+#logo
+{
+    height: 80px;
+    width: 80px;
+    border: 1px rgba(25, 25, 25, 0.4) solid;
+    border-radius:50%;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <title>Ride!t, roulez vers la liberté</title>
+    <link rel="stylesheet" href="../css/Ride!t.css"/>
+    <link rel="stylesheet" href="../css/mapStyle.css"/>
+    <link rel="stylesheet" href="../css/sliderStyle.css"/>
+    
+    <!-- adding fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    
+    <!-- viewport -->
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    
+    <!-- integrate mapbox-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    
+    
+    <link rel="icon" type="image/png" href="../pictures/bicycle-solid.png" />
+    
+</head>
+    
+<body>
+<div id="pageBlock">
+    
+    <header>
+        <div id="menuContainer">
+            <ul id="menu">
+                <li><a href="#sliderContainer">Accueil</a></li>
+                <li><img src="../pictures/bicycle-solid.png" alt="logo Ride!t" id="logo"/></li>
+                <li><a href="#mapContainer">Réservez</a></li>
+            </ul>
+        </div>
+    </header>
+        
+    
+    <div id="sliderContainer">
+        <div id="slider">
+            <figure>
+                <img src="" alt="" class="pictures" id = "blockImg" />
+                <figcaption id="txtImg">
+                    <h3 id="titleTxt"></h3>
+                    <p id="pTxt"></p>
+                </figcaption>
+            </figure>
+            
+        </div>
+        <div id="buttonsContainer">
+            <button class="sliderButton" id="btnLeft">Left</button>
+            <button class="sliderButton" id="btnPlay">Play</button>
+            <button class="sliderButton" id="btnStop">Stop</button>
+            <button class="sliderButton" id="btnRight">Right</button>
+        </div>          
+    </div>
+ 
+    
+    <div id="mapContainer">
+        <div id="map"></div>
+        <aside id="reservationContainer">
+            <h3>Votre sélection</h3>
+            <h4 id="stationName">Nom de la station</h4>
+            <h4 id="stationAddress">Adresse</h4>
+            <p id="avaibleBikes"><i class="fas fa-bicycle"></i> 25 vélos disponibles</p>
+            <p id="avaibleBikeStands"><i class="far fa-bookmark"></i> xx emplacements disponible</p>
+            <p>------------------</p>
+            <form method="post" action="">
+                <p>
+                    <label for="firstName">Nom</label> : <input type="text" name="firstName"/>
+                </p>
+                <p>
+                    <label for="lastName">Prénom</label> : <input type="text" name="lastName"/>
+                </p>
+            </form>
+        </aside>
+    </div>
+  
+    
+</div>
+    
+    <script src="../js/ajaxGet.js"></script>
+    <script src="../js/mapBox.js"></script>
+    <script src="../js/slider.js"></script>
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

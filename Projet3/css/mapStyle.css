@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('../font/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: bold;
+    src: url('../font/Roboto-Bold.ttf');
+}
+@font-face{
+    font-family: "Roboto-condensed";
+    src: url('../font/Roboto-Condensed.ttf');
+}
+@font-face{
+    font-family: "Roboto-condensed";
+    src: url('../font/Roboto-BoldCondensed.ttf');
+}
+h1,h2,h3,h4,h5
+{
+    font-family: "Roboto-condensed";
+    font-weight: bold;
+}
+h3
+{
+    text-transform: uppercase;
+}
+#mapContainer
+{
+    border: 2px black solid;
+    border-radius:15px;
+    padding: 5px;
+    position: relative;
+    margin: 10px;
+    margin-top: 30px;
+    height: 800px;
+}
+#map
+{
+    height: 700px;
+    width: 80%;
+    border-radius: 15px;
+}
+.buttonPopUp
+{
+    background-color: white;
+    border: 2px rgb(255,127,0) solid;
+    color: rgb(255,127,0);
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 80%;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+.buttonPopUp:hover
+{
+    background-color: rgb(255,127,0);
+    color:white;
+}
+.fas
+{
+    font-size: 20px;
+    color: rgb(255,127,0);
+    margin-right: 3px;
+    position: relative;
+    top:3px;
+}
+.far
+{
+    font-size: 20px;
+    color: rgb(255,127,0);
+    margin-right: 3px;
+}
+
+#reservationContainer
+{
+    background-color: rgba(127,127,127, 0.3);
+    width: 25%;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 15px;
+    margin-left: 15px;
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#reservationContainer h3
+{
+    background-color: white;
+    color:rgb(255,127,0);
+    width: 80%;
+    border: 1px rgba(50,50,50,0.3) solid;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+}
+#reservationContainer h4
+{
+    font-size: 20px;
+}
+#mapContainer
+{
+    display:flex;
+    flex-direction: row;
+}
+#mapContainer label
+{
+    width: 90%;
+}
+.marker
+{
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-top : 14px solid rgb(255,127,0);
+    border-right : 8px solid transparent;
+    border-left : 7px solid transparent;
+    background-image: url("../pictures/bicycle-solid.png");
+    background-position: -25px;
+}
+div.mapboxgl-popup-content
+{
+    background-color:white;
+    border: 1px rgba(127,127,127,0.8) solid;
+    border-radius:15px;
+    text-align: center;
+    width: 200px;
+}
+
+div.mapboxgl-popup-content h3
+{
+    font-family: 'Roboto-condensed';
+    font-size: 14px;
+}
+div.mapboxgl-popup-content p
+{
+    font-family: 'Roboto';
+    font-size: 10px;
+}

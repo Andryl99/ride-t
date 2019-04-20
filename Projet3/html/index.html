@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <title>Ride!t, roulez vers la liberté</title>
+    <link rel="stylesheet" href="../css/Ride!t.css"/>
+    <link rel="stylesheet" href="../css/mapStyle.css"/>
+    <link rel="stylesheet" href="../css/sliderStyle.css"/>
+    
+    
+    <!-- viewport -->
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+ 
+    
+    <!--script mapbox-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    
+    
+    <link rel="icon" type="image/png" href="../pictures/bicycle-solid.png" />
+    
+</head>
+    
+<body>
+<div id="pageBlock">
+    
+    <header>
+        <div id="menuContainer">
+            <ul id="menu">
+                <li><a href="#sliderContainer">Accueil</a></li>
+                <li><img src="../pictures/bicycle-solid.png" alt="logo Ride!t" id="logo"/></li>
+                <li><a href="#mapContainer">Réservez</a></li>
+            </ul>
+        </div>
+    </header>
+        
+    
+    <div id="sliderContainer">
+        <div id="slider">
+            <figure>
+                <img src="" alt="" class="pictures" id = "blockImg" />
+                <figcaption id="txtImg">
+                    <h3 id="titleTxt"></h3>
+                    <p id="pTxt"></p>
+                </figcaption>
+            </figure>
+            
+        </div>
+        <div id="buttonsContainer">
+            <button class="sliderButton" id="btnLeft">Left</button>
+            <button class="sliderButton" id="btnPlay">Play</button>
+            <button class="sliderButton" id="btnStop">Stop</button>
+            <button class="sliderButton" id="btnRight">Right</button>
+        </div>          
+    </div>
+ 
+    
+    <div id="mapContainer">
+        <div id="map"></div>
+        <aside id="reservationContainer">
+            <ul id="reservationInfos">
+            </ul>
+            <button id="rButton">
+            </button>
+        </aside>
+    </div>
+  
+    <script src="../js/mapBox.js"></script>
+    <script src="../js/slider.js"></script>
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
